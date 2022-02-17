@@ -8,9 +8,7 @@ class Rectangle {
 		return this.height;
 	}
 
-	getWeight() {
-		let a = 1;
-		var b = 0;
-		return this.width;
+	setWeight(h) {
+		this.height = h;
 	}
 }

@@ -35,6 +35,23 @@ class Function_ {
 		return this.name;
 	}
 }
+//FOR CONSTRUCTOR ASSIGNEMNTS   {this.height = height}
+class ConstructorAssignment_ {
+	constructor(n) {
+		this.name = n;
+	}
+
+	//APPEND VARIABLE NAME to CLASS DIRECT CHIDLREN
+	appendToClass(node) {
+		node.appendChild(this);
+	}
+	hasChildren() {
+		return false;
+	}
+	getId() {
+		return "Declaration:" + this.name;
+	}
+}
 
 class Assignement_ {
 	constructor(variable, value, type) {
@@ -107,11 +124,14 @@ class Tree {
 			}
 		}
 	}
+	// gets the type (int,string,bool) of a variable
 }
+
 module.exports = {
 	Class_: Class_,
 	Function_: Function_,
 	Assignment_: Assignement_,
+	ConstructorAssignment_,
 	ReturnStatetment_: ReturnStatetment_,
 	Tree,
 };
