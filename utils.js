@@ -1,12 +1,4 @@
-const { Assignment_, ConstructorAssignment_ } = require("./components");
-// Given a root and a variabel name it finds the type {string,int} of the variable
-function findType(root, name) {
-	if (root instanceof Assignment_ || ConstructorAssignment_) {
-		if (root.name == name) {
-			return root.type;
-		}
-	}
-}
+const fs = require("fs");
 
 function generateRandomValue(type) {
 	//CASE UNDEFINED SELECT RANDOM INT
@@ -30,9 +22,22 @@ function appendToTestFile(code) {
 		console.warn(err);
 	});
 }
+
+function importCode(path) {
+	if (!path) {
+		throw new Error("Provide File Path");
+	}
+
+	const code = fs.readFileSync(path[0]).toString();
+	if (!code) {
+		throw new Error("FilePath provided is Empty");
+	}
+	return code;
+}
+
 module.exports = {
-	findType,
 	generateRandomValue,
 	template_match,
 	appendToTestFile,
+	importCode,
 };

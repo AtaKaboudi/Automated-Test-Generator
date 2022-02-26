@@ -1,41 +1,13 @@
-const fs = require("fs");
 var esprima = require("esprima");
-const {
-	ReturnStatetment_,
-	Class_,
-	Function_,
-	Assignment_,
-	Tree,
-	ConstructorAssignment_,
-} = require("./components.js");
-const { findType, generateRandomValue } = require("./utils");
-const OBSERVERS = require("./template.js");
-const { Console } = require("console");
+const { findType, generateRandomValue, importCode } = require("./utils");
+const Constructor_Template = require("./Templates/constructor");
+const Observer = require("./Observer");
 
-// CONSTANT TYPE USED BU ESPIMA LIBRARY
-CLASS_TYPE = "ClassDeclaration";
-METHOD_TYPE = "MethodDefinition";
-STATEMENT_TYPE = "BlockStatement";
-DECLARATION_TYPE = "VariableDeclaration";
-RETURN_TYPE = "ReturnStatement";
-EXPRESSION_STATEMENT_TYPE = "ExpressionStatement";
-ASSIGNMENT_EXPRESSION_TYPE = "AssignmentExpression";
-
-// file path in console
-var args = process.argv.slice(2);
-
-function importCode() {
-	let args = process.argv.slice(2);
-	if (!args) {
-		throw new Error("Provide File Path");
-	}
-
-	const code = fs.readFileSync(args[0]).toString();
-	if (!code) {
-		throw new Error("FilePath provided is Empty");
-	}
-	return code;
-}
+let OBSERVERS = [];
+// INSTANCIATING CLASSES AND OBSERVERS
+let constructor_class = new Constructor_Template();
+let Observer_ = new Observer(constructor_class);
+OBSERVERS.push(Observer_);
 
 function parseCode(code) {
 	var tree = esprima.parseScript(code);
@@ -66,8 +38,9 @@ function traverse(node) {
 		traverse(node.expression);
 	}
 }
+var path = process.argv.slice(2);
 
-var code = importCode();
+var code = importCode(path);
 var astTree = parseCode(code);
 traverse(astTree);
 //console.log(astTree.body[0].body.body[0].value.body.body[0]);
