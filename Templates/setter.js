@@ -1,14 +1,16 @@
 const COMPONENTS = require("../components_");
 const { appendToTestFile, traverse_and_find } = require("../utils");
-class Constructor_Template {
+class Setter_Template {
 	validate_content(p) {
-		let function_ = p[p.length - 1].value;
-
-		return p[p.length - 1].key.name == "constructor";
-
 		//  THAT AT LEAST ONE OF THE PARAMS IS ASSIGNMENT TO THE CLASS PARAMS
-		/*
 		let function_ = p[p.length - 1].value;
+
+		// as constructors share the same function content as setters we return false if name is constructor
+
+		if (traverse_and_find(COMPONENTS.Method_, p).key.name == "constructor") {
+			return false;
+		}
+
 		let block_ = p[p.length - 1].value.body;
 		if (!block_ || !function_ || !function_.params || !block_.body) {
 			return false;
@@ -31,25 +33,24 @@ class Constructor_Template {
 				return true;
 			}
 		}
-*/
 	}
 	generateTestCase(p) {
-		console.log("[GENERATING TEST CASE FOR  CONSTRUCTOR]");
-		var testCase = "";
+		console.log("[GENERATING TEST CASE FOR  SETTER]");
+		var testCase = " \n";
 		var className = traverse_and_find(COMPONENTS.ClassDeclaration_, p).id.name;
+		var functionName = traverse_and_find(COMPONENTS.Method_, p).key.name;
+		var variable_to_set = traverse_and_find(COMPONENTS.Expression_, p)
+			.expression.left.property.name;
 		var instanceName = className.toLowerCase();
 
-		testCase += `const ${className} = require('./samplecode') \n `;
-
-		testCase += `test('${p[p.length - 1].key.name}', () => {  
+		testCase += `test('${functionName}', () => {  
 		let ${instanceName}= new ${className}(1, 2); 
-
-			expect(${instanceName}.height).toBe(1);  
-			expect(${instanceName}.width).toBe(2); 
+            ${instanceName}.${functionName}(3)
+			expect(${instanceName}.${variable_to_set}).toBe(3);  
 		});
 		`;
 		appendToTestFile(testCase);
 	}
 }
 
-module.exports = Constructor_Template;
+module.exports = Setter_Template;

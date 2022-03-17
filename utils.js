@@ -18,7 +18,7 @@ function template_match(a, b) {
 	return true;
 }
 function appendToTestFile(code) {
-	fs.writeFile("./testFile.js", code, (err) => {
+	fs.appendFile("./output.test.js", code, (err) => {
 		console.warn(err);
 	});
 }
@@ -35,9 +35,52 @@ function importCode(path) {
 	return code;
 }
 
+function traverse_and_find(target_type, path) {
+	let found = false;
+
+	//Searches in the array
+	for (node of path) {
+		if (node.type == target_type) {
+			found = true;
+			return node;
+		}
+	}
+
+	//Expand last element in array and search in it a
+
+	if (!found) {
+		rot = path[path.length - 1];
+		let res = traverse_find_recursive(rot, target_type);
+		return res;
+	}
+}
+function traverse_find_recursive(node, target) {
+	if (node.type == target) {
+		//	console.log("Matched", node.type);
+		return node;
+	}
+
+	if (node.body) {
+		if (node.body instanceof Array) {
+			for (n of node.body) {
+				return traverse_find_recursive(n, target);
+			}
+		} else {
+			return traverse_find_recursive(node.body, target);
+		}
+	}
+	if (node.value) {
+		return traverse_find_recursive(node.value, target);
+	}
+	if (node.expression) {
+		return traverse_find_recursive(node.expression, target);
+	}
+}
+
 module.exports = {
 	generateRandomValue,
 	template_match,
 	appendToTestFile,
 	importCode,
+	traverse_and_find,
 };

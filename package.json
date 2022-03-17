@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "start":"npm run generate ./samplecode.js && npm run test",
-    "generate": "node parser.js",
+    "start":"npm run generate  && npm run test",
+    "generate": "node parser.js  ./samplecode.js",
     "test": "jest  --coverage"
   },
   "devDependencies": {
