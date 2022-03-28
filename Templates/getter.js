@@ -1,4 +1,6 @@
 const COMPONENTS = require("../components_");
+const { getInput } = require("../InputManager");
+
 const { appendToTestFile, traverse_and_find } = require("../utils");
 class Getter_Template {
 	validate_content(p) {
@@ -14,6 +16,7 @@ class Getter_Template {
 		let className = traverse_and_find(COMPONENTS.ClassDeclaration_, p).id.name;
 		let instanceName = className.toLowerCase();
 		let testCase = " \n";
+
 		testCase += ` test("${functionName}", () => {
             let ${instanceName} = new ${className}(1, 2);
             expect(${instanceName}.${functionName}()).toBe(1);

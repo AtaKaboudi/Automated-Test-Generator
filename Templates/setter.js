@@ -1,5 +1,6 @@
 const COMPONENTS = require("../components_");
 const { appendToTestFile, traverse_and_find } = require("../utils");
+const { getInput } = require("../InputManager");
 class Setter_Template {
 	validate_content(p) {
 		//  THAT AT LEAST ONE OF THE PARAMS IS ASSIGNMENT TO THE CLASS PARAMS
@@ -43,10 +44,25 @@ class Setter_Template {
 			.expression.left.property.name;
 		var instanceName = className.toLowerCase();
 
+		/* Handling Input */
+		console.log("input");
+		var nb_params = traverse_and_find(COMPONENTS.Function_, p).params.length;
+		var input_values = getInput(nb_params, "int");
+		var input_string = "(";
+		console.log(input_values);
+
+		for (var i = 0; i < nb_params; i++) {
+			input_string += input_values[i];
+			if (i < nb_params.length - 1) {
+				input_string += ",";
+			}
+		}
+
+		input_string += ")";
 		testCase += `test('${functionName}', () => {  
-		let ${instanceName}= new ${className}(1, 2); 
-            ${instanceName}.${functionName}(3)
-			expect(${instanceName}.${variable_to_set}).toBe(3);  
+		let ${instanceName}= new ${className}(1,1); 
+            ${instanceName}.${functionName}${input_string}
+			expect(${instanceName}.${variable_to_set}).toBe${input_string};  
 		});
 		`;
 		appendToTestFile(testCase);

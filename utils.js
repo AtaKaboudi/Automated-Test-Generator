@@ -77,6 +77,8 @@ function traverse_find_recursive(node, target) {
 	}
 }
 
+function getNbInput() {}
+
 module.exports = {
 	generateRandomValue,
 	template_match,
