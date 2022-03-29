@@ -34,7 +34,7 @@ class Constructor_Template {
 */
 	}
 	generateTestCase(p) {
-		console.log("[GENERATING TEST CASE FOR  CONSTRUCTOR]");
+		console.log("[GENERATING TEST CASE IN CLASS  CONSTRUCTOR]");
 		var testCase = "";
 		var className = traverse_and_find(COMPONENTS.ClassDeclaration_, p).id.name;
 		var instanceName = className.toLowerCase();

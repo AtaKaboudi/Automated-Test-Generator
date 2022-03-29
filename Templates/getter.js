@@ -10,12 +10,14 @@ class Getter_Template {
 		return returnStatement.argument.object.type == COMPONENTS.ThisExpression;
 	}
 	generateTestCase(p) {
-		console.log("[GENERATING TEST CASE FOR GETTER]");
+		console.log("[GENERATING TEST CASE IN CLASS GETTER]");
 		let functionName = traverse_and_find(COMPONENTS.Method_, p).key.name;
 
 		let className = traverse_and_find(COMPONENTS.ClassDeclaration_, p).id.name;
 		let instanceName = className.toLowerCase();
 		let testCase = " \n";
+
+		var input = getInput(1, "int");
 
 		testCase += ` test("${functionName}", () => {
             let ${instanceName} = new ${className}(1, 2);

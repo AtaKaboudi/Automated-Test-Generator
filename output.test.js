@@ -13,7 +13,7 @@ const Rectangle = require('./samplecode')
          
 test('setWeight', () => {  
 		let rectangle= new Rectangle(1,1); 
-            rectangle.setWeight(71)
-			expect(rectangle.height).toBe(71);  
+            rectangle.setWeight(75)
+			expect(rectangle.height).toBe(75);  
 		});
 		

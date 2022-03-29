@@ -36,7 +36,7 @@ class Setter_Template {
 		}
 	}
 	generateTestCase(p) {
-		console.log("[GENERATING TEST CASE FOR  SETTER]");
+		console.log("[GENERATING TEST CASE IN CLASS  SETTER]");
 		var testCase = " \n";
 		var className = traverse_and_find(COMPONENTS.ClassDeclaration_, p).id.name;
 		var functionName = traverse_and_find(COMPONENTS.Method_, p).key.name;
@@ -45,20 +45,9 @@ class Setter_Template {
 		var instanceName = className.toLowerCase();
 
 		/* Handling Input */
-		console.log("input");
 		var nb_params = traverse_and_find(COMPONENTS.Function_, p).params.length;
-		var input_values = getInput(nb_params, "int");
-		var input_string = "(";
-		console.log(input_values);
+		var input_string = getInput(nb_params, "int");
 
-		for (var i = 0; i < nb_params; i++) {
-			input_string += input_values[i];
-			if (i < nb_params.length - 1) {
-				input_string += ",";
-			}
-		}
-
-		input_string += ")";
 		testCase += `test('${functionName}', () => {  
 		let ${instanceName}= new ${className}(1,1); 
             ${instanceName}.${functionName}${input_string}
