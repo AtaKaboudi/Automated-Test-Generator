@@ -9,4 +9,5 @@ module.exports = {
 	Expression_: "ExpressionStatement",
 	Assignment_: "AssignmentExpression",
 	ThisExpression: "ThisExpression",
+	IfStatement: "IfStatement",
 };

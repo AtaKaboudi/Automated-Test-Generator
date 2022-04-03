@@ -34,4 +34,32 @@ function formatInput(values) {
 	return response + ")";
 }
 
-module.exports = { getInput };
+function getBranchParams(branch) {
+	let operator = branch.test.operator;
+	let left = branch.test.left;
+	let right = branch.test.right;
+	if ((left.type == "Identifier") & (right.type == "Identifier")) {
+		throw Error(
+			"[ BRANCH PARAMS]  cannot handle boolean expressions with 2 Identifier"
+		);
+	}
+	let Literal = left.type == "Literal" ? left : right;
+	if (typeof Literal.value == "number") {
+		return findParamsInt(operator, Literal);
+	}
+	if (typeof Literal.value == "string") {
+		return findParamsString(operator, Literal);
+	}
+	return false;
+}
+
+function findParamsInt(op, literal) {
+	// given the operator and the literal, find the params that will cover both true,false output of the operator
+	if ((op == "<") | (op == ">")) return [literal.value + 1, literal.value - 1];
+	if ((op == "==") | (op == "!=")) return [literal.value, literal.value + 1];
+}
+function findParamsString(op, literal) {
+	// given the operator and the literal, find the params that will cover both true,false output of the operator
+}
+
+module.exports = { getInput, getBranchParams };

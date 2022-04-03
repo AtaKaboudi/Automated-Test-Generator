@@ -4,6 +4,7 @@ const COMPONENTS = require("./components_");
 const Constructor_Template = require("./Templates/constructor");
 const Setter_Template = require("./Templates/setter");
 const Getter_Template = require("./Templates/getter");
+const Branch_Template = require("./Templates/branch");
 const dispatcher = require("./Dispatcher");
 
 function parseCode(code) {
@@ -39,10 +40,12 @@ const Dispatcher = new dispatcher();
 constructor_ = new Constructor_Template();
 setter_ = new Setter_Template();
 getter_ = new Getter_Template();
+branch_ = new Branch_Template();
 
 Dispatcher.addTemplate(constructor_);
 Dispatcher.addTemplate(setter_);
 Dispatcher.addTemplate(getter_);
+Dispatcher.addTemplate(branch_);
 
 var path = process.argv.slice(2);
 

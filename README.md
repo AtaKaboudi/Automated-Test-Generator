@@ -9,6 +9,7 @@ Parser.js accesses the source code of the program and extracts the AST using esp
 Furthermore it then traverses through the AST and dispatches all the method nodes found using the Dispatcher.js. In this contewt we implemented an Observer Design pattern. We chose this apttern as each type a function has a corresponding JEST Test syntaxe and we will try to generalize as much as we can the function within their
 own class.
 
+
 ./Template containes an implementation of various Methods tempaltes that could be present in the srouce code.
 This folder containes the main baseline for extension and innovation as our dependency will be more efficient
 as more tempaltes are implemented.
