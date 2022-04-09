@@ -5,6 +5,7 @@ const Constructor_Template = require("./Templates/constructor");
 const Setter_Template = require("./Templates/setter");
 const Getter_Template = require("./Templates/getter");
 const Branch_Template = require("./Templates/branch");
+const Update_Template = require("./Templates/update");
 const dispatcher = require("./Dispatcher");
 
 function parseCode(code) {
@@ -41,15 +42,18 @@ constructor_ = new Constructor_Template();
 setter_ = new Setter_Template();
 getter_ = new Getter_Template();
 branch_ = new Branch_Template();
+update_ = new Update_Template();
 
 Dispatcher.addTemplate(constructor_);
 Dispatcher.addTemplate(setter_);
 Dispatcher.addTemplate(getter_);
 Dispatcher.addTemplate(branch_);
+Dispatcher.addTemplate(update_);
 
 var path = process.argv.slice(2);
 
 var code = importCode(path);
 var astTree = parseCode(code);
+
 traverse(astTree, []);
 //console.log(astTree.body[0].body.body[0].value.body.body[0]);

@@ -430,4 +430,634 @@ test('setWeight', () => {
             rectangle.setWeight(14)
 			expect(rectangle.height).toBe(14);  
 		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(54)
+			expect(rectangle.height).toBe(54);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(41)
+			expect(rectangle.height).toBe(41);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(55)
+			expect(rectangle.height).toBe(55);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(6)
+			expect(rectangle.height).toBe(6);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(11)
+			expect(rectangle.height).toBe(11);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(81)
+			expect(rectangle.height).toBe(81);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(14)
+			expect(rectangle.height).toBe(14);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(82)
+			expect(rectangle.height).toBe(82);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(29)
+			expect(rectangle.height).toBe(29);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(43)
+			expect(rectangle.height).toBe(43);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(39)
+			expect(rectangle.height).toBe(39);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(57)
+			expect(rectangle.height).toBe(57);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(33)
+			expect(rectangle.height).toBe(33);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(68)
+			expect(rectangle.height).toBe(68);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(65)
+			expect(rectangle.height).toBe(65);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(33)
+			expect(rectangle.height).toBe(33);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(33)
+			expect(rectangle.height).toBe(33);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(88)
+			expect(rectangle.height).toBe(88);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(47)
+			expect(rectangle.height).toBe(47);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(96)
+			expect(rectangle.height).toBe(96);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(93)
+			expect(rectangle.height).toBe(93);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(85)
+			expect(rectangle.height).toBe(85);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(19)
+			expect(rectangle.height).toBe(19);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(27)
+			expect(rectangle.height).toBe(27);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(42)
+			expect(rectangle.height).toBe(42);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(2)
+			expect(rectangle.height).toBe(2);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(97)
+			expect(rectangle.height).toBe(97);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(52)
+			expect(rectangle.height).toBe(52);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(49)
+			expect(rectangle.height).toBe(49);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(5)
+			expect(rectangle.height).toBe(5);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(50)
+			expect(rectangle.height).toBe(50);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(77)
+			expect(rectangle.height).toBe(77);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(30)
+			expect(rectangle.height).toBe(30);  
+		});
+		const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+         
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(15)
+			expect(rectangle.height).toBe(15);  
+		});
+		 
+ test("getHeight", () => {
+            let rectangle = new Rectangle(1, 2);
+            expect(rectangle.getHeight()).toBe(1);
+        });;
+        const Rectangle = require('./samplecode') 
+ test('constructor', () => {  
+		let rectangle= new Rectangle(1, 2); 
+
+			expect(rectangle.height).toBe(1);  
+			expect(rectangle.width).toBe(2); 
+		});
+		 
+test('setWeight', () => {  
+		let rectangle= new Rectangle(1,1); 
+            rectangle.setWeight(94)
+			expect(rectangle.height).toBe(94);  
+		});
 		

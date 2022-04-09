@@ -19,11 +19,15 @@ class Rectangle {
 			return this.width;
 		}
 	}
+	sampleUpdateFunction(a) {
+		this.height = this.height - a;
+	}
 	/*
-	test('setWeight', () => {  
-		let rectangle= new Rectangle(10,1); 
-			expect(sampleBranchFunction(-1),1);
-        	expect(sampleBranchFunction(1),10);
+	test('sampleUpdateFunction', () => {  
+		let rectangle = new Rectangle(3, 2);
+		let old_value = rectangle.getHeight();
+		rectangle.sampleUpdateFunction(1);
+		expect(this.height).toBe(old_value - 1);
 
 		});
 	*/
