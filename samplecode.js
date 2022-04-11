@@ -1,28 +1,28 @@
 class Rectangle {
-	constructor(height, width) {
-		this.height = height;
-		this.width = width;
-	}
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
 
-	getHeight() {
-		return this.height;
-	}
+  getHeight() {
+    return this.height;
+  }
 
-	setWeight(h) {
-		this.height = h;
-	}
+  setWeight(h) {
+    this.height = h;
+  }
 
-	sampleBranchFunction(a) {
-		if (a == 2) {
-			return this.height;
-		} else if (a < 0) {
-			return this.width;
-		}
-	}
-	sampleUpdateFunction(a) {
-		this.height = this.height - a;
-	}
-	/*
+  // sampleBranchFunction(a) {
+  // 	if (a == 2) {
+  // 		return this.height;
+  // 	} else if (a < 0) {
+  // 		return this.width;
+  // 	}
+  // }
+  sampleUpdateFunction(a) {
+    this.height = this.height - a;
+  }
+  /*
 	test('sampleUpdateFunction', () => {  
 		let rectangle = new Rectangle(3, 2);
 		let old_value = rectangle.getHeight();
