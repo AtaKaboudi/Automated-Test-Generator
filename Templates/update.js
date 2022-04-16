@@ -7,10 +7,11 @@ class Update_Template {
   validate_content(p) {
     let assignment_ = traverse_and_find(COMPONENTS.Assignment_, p);
     if (!assignment_) return false;
+    console.log(assignment_.left);
     if (assignment_.left.object.type != COMPONENTS.ThisExpression) return false;
     let function_ = traverse_and_find(COMPONENTS.Function_, p);
     if (!assignment_.right.left || !assignment_.right.right) return false;
-    if (function_.params.length == 0) return true;
+    if (function_.params.length == 0) return false;
 
     if (
       assignment_.right.left.object.type == COMPONENTS.ThisExpression ||
@@ -42,6 +43,7 @@ class Update_Template {
 		let ${instanceName} = new  ${className}(1000, 2);
 		let old_value = ${instanceName}.getHeight();
 		rectangle.${functionName}${input_string};
+		console.log(old_value)
 		expect(rectangle.getHeight()).toBe(old_value - ${input_string});
 
 		});`;

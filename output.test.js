@@ -5,7 +5,14 @@ const Rectangle = require('./samplecode')
 			expect(rectangle.height).toBe(1);  
 			expect(rectangle.width).toBe(2); 
 		});
-		 
+		test('sampleUpdateFunction', () => {  
+		let rectangle = new  Rectangle(1000, 2);
+		let old_value = rectangle.getHeight();
+		rectangle.sampleUpdateFunction(31);
+		console.log(old_value)
+		expect(rectangle.getHeight()).toBe(old_value - (31));
+
+		}); 
  test("getHeight", () => {
             let rectangle = new Rectangle(1, 2);
             expect(rectangle.getHeight()).toBe(1);
@@ -13,13 +20,7 @@ const Rectangle = require('./samplecode')
          
 test('setWeight', () => {  
 		let rectangle= new Rectangle(1,1); 
-            rectangle.setWeight(22)
-			expect(rectangle.height).toBe(22);  
+            rectangle.setWeight(50)
+			expect(rectangle.height).toBe(50);  
 		});
-		test('sampleUpdateFunction', () => {  
-		let rectangle = new  Rectangle(1000, 2);
-		let old_value = rectangle.getHeight();
-		rectangle.sampleUpdateFunction(45);
-		expect(rectangle.getHeight()).toBe(old_value - (45));
-
-		});
+		

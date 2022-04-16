@@ -13,15 +13,23 @@ class Rectangle {
   }
 
   // sampleBranchFunction(a) {
-  // 	if (a == 2) {
-  // 		return this.height;
-  // 	} else if (a < 0) {
-  // 		return this.width;
-  // 	}
+  //   if (a == 2) {
+  //     return this.height;
+  //   } else if (a < 0) {
+  //     return this.width;
+  //   }
   // }
   sampleUpdateFunction(a) {
     this.height = this.height - a;
   }
+  // sampleAddFunction(a, b) {
+  //   c = a + b;
+  //   return c;
+  // }
+  // sampleSubtractFunction(a, b) {
+  //   this.width = a - b;
+  //   return this.width;
+  // }
   /*
 	test('sampleUpdateFunction', () => {  
 		let rectangle = new Rectangle(3, 2);
