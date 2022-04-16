@@ -8,9 +8,9 @@ const Rectangle = require('./samplecode')
 		test('sampleUpdateFunction', () => {  
 		let rectangle = new  Rectangle(1000, 2);
 		let old_value = rectangle.getHeight();
-		rectangle.sampleUpdateFunction(31);
+		rectangle.sampleUpdateFunction(12);
 		console.log(old_value)
-		expect(rectangle.getHeight()).toBe(old_value - (31));
+		expect(rectangle.getHeight()).toBe(old_value - (12));
 
 		}); 
  test("getHeight", () => {
@@ -20,7 +20,7 @@ const Rectangle = require('./samplecode')
          
 test('setWeight', () => {  
 		let rectangle= new Rectangle(1,1); 
-            rectangle.setWeight(50)
-			expect(rectangle.height).toBe(50);  
+            rectangle.setWeight(62)
+			expect(rectangle.height).toBe(62);  
 		});
 		

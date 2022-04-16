@@ -18,8 +18,9 @@ class Update_Template {
       assignment_.right.right.object.type == COMPONENTS.ThisExpression
     ) {
       return true;
+    } else {
+      return false;
     }
-    return false;
   }
 
   generateTestCase(p) {
