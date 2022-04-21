@@ -1,4 +1,4 @@
-function getInput(n, type) {
+function getInput(n, type, format) {
 	if (n == 0) {
 		return;
 	}
@@ -7,13 +7,15 @@ function getInput(n, type) {
 		for (let i = 0; i < n; i++) {
 			result[i] = Math.floor(Math.random() * 100);
 		}
-		return formatInput(result);
+		if (format) return formatInput(result);
+		else return result;
 	}
 	if (type == "string") {
 		for (let i = 0; i < n; i++) {
 			result[i] = Math.floor(Math.random() * 100).toString();
 		}
-		return formatInput(result);
+		if (format) return formatInput(result);
+		else return result;
 	}
 
 	console.log(
@@ -55,11 +57,16 @@ function getBranchParams(branch) {
 
 function findParamsInt(op, literal) {
 	// given the operator and the literal, find the params that will cover both true,false output of the operator
-	if ((op == "<") | (op == ">")) return [literal.value + 1, literal.value - 1];
-	if ((op == "==") | (op == "!=")) return [literal.value, literal.value + 1];
+	if (op == ">") return [literal.value + 1, literal.value - 1];
+	if (op == "<") return [literal.value - 1, literal.value + 1];
+	if (op == "==") return [literal.value, literal.value + 1];
+	if (op == "!=") return [literal.value - 1, literal.value + 1];
+	if (op == ">=") return [literal.value, literal.value - 1];
+	if (op == "<=") return [literal.value - 1, literal.value + 1];
+	return false;
 }
 function findParamsString(op, literal) {
 	// given the operator and the literal, find the params that will cover both true,false output of the operator
 }
 
-module.exports = { getInput, getBranchParams };
+module.exports = { getInput, getBranchParams, formatInput };

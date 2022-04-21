@@ -2,6 +2,7 @@ const COMPONENTS = require("../components_");
 const { appendToTestFile, traverse_and_find } = require("../utils");
 const { getInput } = require("../InputManager");
 class Setter_Template {
+	name = "Setter";
 	validate_content(p) {
 		//  THAT AT LEAST ONE OF THE PARAMS IS ASSIGNMENT TO THE CLASS PARAMS
 		let function_ = p[p.length - 1].value;
@@ -36,7 +37,7 @@ class Setter_Template {
 		}
 	}
 	generateTestCase(p) {
-		console.log("[GENERATING TEST CASE IN CLASS  SETTER]");
+		console.log("[GENERATOR] TEST CASE IN CLASS  SETTER");
 		var testCase = " \n";
 		var className = traverse_and_find(COMPONENTS.ClassDeclaration_, p).id.name;
 		var functionName = traverse_and_find(COMPONENTS.Method_, p).key.name;
@@ -46,7 +47,7 @@ class Setter_Template {
 
 		/* Handling Input */
 		var nb_params = traverse_and_find(COMPONENTS.Function_, p).params.length;
-		var input_string = getInput(nb_params, "int");
+		var input_string = getInput(nb_params, "int", true);
 
 		testCase += `test('${functionName}', () => {  
 		let ${instanceName}= new ${className}(1,1); 

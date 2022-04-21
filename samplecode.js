@@ -1,44 +1,49 @@
 class Rectangle {
-  constructor(height, width) {
-    this.height = height;
-    this.width = width;
-  }
+	constructor(height, width) {
+		this.height = height;
+		this.width = width;
+	}
 
-  getHeight() {
-    return this.height;
-  }
+	getHeight() {
+		return this.height;
+	}
 
-  setWeight(h) {
-    this.height = h;
-  }
+	setWeight(h) {
+		this.height = h;
+	}
 
-  // sampleBranchFunction(a) {
-  //   if (a == 2) {
-  //     return this.height;
-  //   } else if (a < 0) {
-  //     return this.width;
-  //   }
-  // }
-  sampleUpdateFunction(a) {
-    this.height = this.height - a;
-  }
-  // sampleAddFunction(a, b) {
-  //   c = a + b;
-  //   return c;
-  // }
-  // sampleSubtractFunction(a, b) {
-  //   this.width = a - b;
-  //   return this.width;
-  // }
-  /*
-	test('sampleUpdateFunction', () => {  
-		let rectangle = new Rectangle(3, 2);
-		let old_value = rectangle.getHeight();
-		rectangle.sampleUpdateFunction(1);
-		expect(this.height).toBe(old_value - 1);
-
-		});
-	*/
+	UpdateFunction(a) {
+		this.height = this.height - a;
+	}
+	add(a, b) {
+		return a + b;
+	}
+	substract(a, b) {
+		return a - b;
+	}
+	divide(a, b) {
+		return a / b;
+	}
+	multiply(a, b) {
+		return a * b;
+	}
+	modulo(a, b) {
+		return a % b;
+	}
+	sampleBranchFunction(a) {
+		if (a == 2) {
+			return 1;
+		} else {
+			return 2;
+		}
+	}
+	sampleBranchFunction_A(a) {
+		if (a < 5) {
+			return 0;
+		} else {
+			return 2;
+		}
+	}
 }
 
 module.exports = Rectangle;

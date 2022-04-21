@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start":"npm run generate  && npm run test",
+    "start": "npm run generate  && npm run test",
     "generate": "node parser.js  ./samplecode.js",
     "test": "jest  --coverage"
   },

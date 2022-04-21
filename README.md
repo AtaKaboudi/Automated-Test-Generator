@@ -1,5 +1,32 @@
 # Automated-Test-Generator
 
+------------------- Executing program --------------------------
+
+run on terminal
+"npm install"
+to install dependencies
+
+open the output.Test.js file on your IDE to see the demo
+
+run on terminal
+"npm run generate"
+to produce test cases for ./sampleCode.js the test cases willl be written in output.test.js file
+Scroll throught the information displayed on the terminal to better monitor the program's behaviour
+
+run on terminal
+"npm run test"
+to run the jest library on output.test.js to get the test report
+
+!!!!! IMPORTANT !!!!
+
+1.  Make sure to delete the content of output.test.js before you recompile the project
+2.  Feel free to change the commands in package.json if you want to apply our software to another source file
+3.  Feel free to change the ./vscode/launch.json file to debug if debugging is needed
+4.  When using our code on another js file make sure to implement the same function types as in samplecode.js as our software still doesn not cover a lot of function.
+5.  Feel free to Contribute to our project.
+
+------------------ DESCRIPTION-----------------------------------
+
 This project aims to automate test cases generation while ensuring maximum coverage
 
 Samplecode.js contains the sample class ofr which we will be genrating the test cases. In it is implemented
@@ -8,7 +35,6 @@ a simple class wth a constructer getter and setter.
 Parser.js accesses the source code of the program and extracts the AST using esprima tool.
 Furthermore it then traverses through the AST and dispatches all the method nodes found using the Dispatcher.js. In this contewt we implemented an Observer Design pattern. We chose this apttern as each type a function has a corresponding JEST Test syntaxe and we will try to generalize as much as we can the function within their
 own class.
-
 
 ./Template containes an implementation of various Methods tempaltes that could be present in the srouce code.
 This folder containes the main baseline for extension and innovation as our dependency will be more efficient
